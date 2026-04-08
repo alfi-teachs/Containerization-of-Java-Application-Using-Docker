@@ -57,3 +57,10 @@ docker ps -a
 
 
 # Optional: Remove container
+
+```bash
+
+docker rm java-container
+
+```
+
