@@ -34,8 +34,8 @@ CMD ["java", "-jar", "target/demo-1.0.jar"]
 # Step 4: Run the container
 
 ```bash
+docker build -t java-web-app:v1 .
 
-docker build -t javaapp .
 
 ```
 
