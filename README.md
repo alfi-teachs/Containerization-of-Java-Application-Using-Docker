@@ -13,7 +13,7 @@ java-docker-app/
 
 ```
 
-# Step 3: Build Docker image
+# Step 2: Build Docker image
 
 ```bash
 
@@ -40,37 +40,34 @@ docker build -t javaapp .
 ```
 
 
-# Step 5: Output
+# Step 3: Build Image
 
 ```bash
 
-docker run --name java-container javaapp
-
+docker build -t java-web-app:v1 .
 ```
-
-You will see:
+# Step 6: Run Container
 
 ```bash
+docker run -d -p 8080:8080 --name java-web-container java-web-app:v1
 
-HELLO FROM JAVA DOCKER APPLICATION
 
 ```
+# Step 7: Open in Browser
+```bash
 
+http://localhost:8080
+```
+# You’ll see:
+Hello Alfia! Your Java Docker App is running 🚀
 
-Since this is a simple Java program (not a web app), it will:
-
-Run once
-Print output
-Exit automatically
-
-That’s why it won’t stay in docker ps (running containers).
+.
 To see it after execution:
 
 
 ```bash
 docker ps -a
 ```
-
 
 # Optional: Remove container
 
