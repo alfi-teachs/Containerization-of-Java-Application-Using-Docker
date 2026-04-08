@@ -1,4 +1,18 @@
-# Step 2: Create Dockerfile
+# Step 1: Create Project Structure
+
+```bash
+java-docker-app/
+ ├── Dockerfile
+ ├── pom.xml
+ └── src/
+     └── main/
+         └── java/
+             └── com/example/demo/
+                 └── DemoApplication.java
+
+
+```
+
 # Step 3: Build Docker image
 
 ```bash
