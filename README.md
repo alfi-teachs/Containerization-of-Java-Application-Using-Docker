@@ -3,15 +3,17 @@
 
 ```bash
 
-FROM eclipse-temurin:17-jdk-jammy
+FROM maven:3.9.6-eclipse-temurin-17
 
 WORKDIR /app
 
-COPY App.java .
+COPY . .
 
-RUN javac App.java
+RUN mvn clean package
 
-CMD ["java", "App"]
+EXPOSE 8080
+
+CMD ["java", "-jar", "target/demo-1.0.jar"]
 
 ```
 
