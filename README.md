@@ -31,29 +31,20 @@ CMD ["java", "-jar", "target/demo-1.0.jar"]
 
 ```
 
-# Step 4: Run the container
-
-```bash
-docker build -t java-web-app:v1 .
-
-
-```
-
-
 # Step 3: Build Image
 
 ```bash
 
 docker build -t java-web-app:v1 .
 ```
-# Step 6: Run Container
+# Step 4: Run Container
 
 ```bash
 docker run -d -p 8080:8080 --name java-web-container java-web-app:v1
 
 
 ```
-# Step 7: Open in Browser
+# Step 5: Open in Browser
 ```bash
 
 http://localhost:8080
@@ -62,8 +53,7 @@ http://localhost:8080
 Hello Alfia! Your Java Docker App is running 🚀
 
 .
-To see it after execution:
-
+To see container after execution:
 
 ```bash
 docker ps -a
